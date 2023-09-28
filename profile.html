@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Here is my First Dashboard" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | Home</title>
+  <!-- Master css -->
+  <link rel="stylesheet" href="./css/master.css" />
+  <!-- Main FrameWork -->
+  <link rel="stylesheet" href="./css/framework.css" />
+  <!-- Font awesome Liberary -->
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+</head>
+
+<body>
+  <main class="page flex prelative">
+    <aside class="side-bar bcwhite">
+      <div class="aside-header">
+        <a href="home.html">
+          <h1 class="prelative aside-header-title txtc prelative pb20 mb50 pointer">
+            elzero
+          </h1>
+        </a>
+      </div>
+      <nav class="asid-nav-bar">
+        <menu>
+          <li class="">
+            <a class="block mb10" href="home.html"><i class="fa-solid fa-chart-bar"></i><span
+                class="pl10 fz14">dashboard</span></a>
+          </li>
+          <li>
+            <a href="settings.html" class="block mb10"><i class="fa-solid fa-gear"></i><span
+                class="pl10 fz14">settings</span></a>
+          </li>
+          <li>
+            <a href="profile.html" class=" active block mb10"><i class="fa-regular fa-user"></i><span
+                class="pl10 fz14">profile</span></a>
+          </li>
+          <li>
+            <a href="projects.html" class=" block mb10"><i class="fa-solid fa-diagram-project"></i><span
+                class="pl10 fz14">projects</span></a>
+          </li>
+          <li>
+            <a href="courses.html" class="block mb10"><i class="fa-solid fa-graduation-cap"></i><span
+                class="pl10 fz14">courses</span></a>
+          </li>
+          <li>
+            <a href="friends.html" class="block mb10"><i class="fa-regular fa-circle-user"></i><span
+                class="pl10 fz14">friends</span></a>
+          </li>
+          <li>
+            <a href="files.html" class="block mb10"><i class="fa-regular fa-file pl2"></i><span
+                class="pl10 fz14">files</span></a>
+          </li>
+          <li>
+            <a href="plans.html" class="block mb10"><i class="fa-regular fa-credit-card"></i><span
+                class="pl10 fz14">plans</span></a>
+          </li>
+        </menu>
+      </nav>
+    </aside>
+    <section class="right-side">
+      <header class="right-side-header flex-jspace-ac pr20 pl20">
+        <form class="header-search-form prelative">
+          <i class="fa-solid fa-magnifying-glass pabsolute"></i>
+          <input class="pl40 pad10" type="search" name="search" placeholder="type a keyword" />
+        </form>
+        <div class="header-avatar flex-ac">
+          <span class="prelative">
+            <i class="fa-regular fa-bell fz20 pointer"></i></span>
+          <div class="header-avatar-image">
+            <img class="pointer" src="./imgs/avatar.png" alt="head-avatar" />
+          </div>
+        </div>
+      </header>
+      <section class="default-section bcback-color">
+        <div class="default-section-header">
+          <h1 class="prelative fz40 pointer mb30">profile</h1>
+        </div>
+        <div class="default-section-content">
+          <!-- profille information -->
+          <article class="profile-details-information bcwhite radius10  flex">
+            <div class="profile-left mt20 mb20 ">
+              <div class="profile-left-img">
+                <img src="./imgs/avatar.png" alt="image">
+              </div>
+              <h1 class="capitalize fz22">osama elzero</h1>
+              <p class="fz17 fw600 capitalize c777">level 20</p>
+              <div class="level-line"><span></span></div>
+              <div class="profile-starts-icons flex-ac gap5 ">
+                <i class="fa-solid fa-star cyellow fz14"></i>
+                <i class="fa-solid fa-star cyellow fz14"></i>
+                <i class="fa-solid fa-star cyellow fz14"></i>
+                <i class="fa-solid fa-star cyellow fz14"></i>
+                <i class="fa-solid fa-star cyellow fz14"></i>
+              </div>
+              <p class="fz12 fw500 c777 capitalize">550 rating</p>
+            </div>
+            <div class="profile-right flex-1">
+              <div class="general-info border-b1 pb15 pt20  pointer  capitalize pl15">
+                <h5 class="fz16 fw600 width100 c777 mb10">general informations:</h5>
+                <div class="line-two  ">
+                  <p class="fz13 c777 fw500 ">full name: <span class="cblack fw500">osama mohamed</span> </p>
+                  <p class="fz13 c777 fw500 ">gender: <span class="cblack fw500">male</span> </p>
+                  <p class="fz13 c777 fw500 ">country: <span class="cblack fw500">egypt</span> </p>
+                  <div class="toggle-check">
+                    <input type="checkbox" id="general-check" class="checkbox">
+                    <label for="general-check">
+                      <div></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="general-info border-b1 pb15 pt15 pointer  capitalize pl15">
+                <h5 class="fz16 fw600 width100 c777 mb10">Personal Information:</h5>
+                <div class="line-two  ">
+                  <p class="fz13 c777 fw500 ">Email: <span class="cblack fw500">o@nn.sa</span> </p>
+                  <p class="fz13 c777 fw500 ">Phone: <span class="cblack fw500"> 019123456789</span> </p>
+                  <p class="fz13 c777 fw500 "> Date Of Birth: <span class="cblack fw500">25/10/1982</span> </p>
+                  <div class="toggle-check">
+                    <input type="checkbox" id="personal-check" class="checkbox">
+                    <label for="personal-check">
+                      <div></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="general-info border-b1 pb20 pt15 pointer  capitalize pl15">
+                <h5 class="fz16 fw600 width100 c777 mb10">Job Information:</h5>
+                <div class="line-two ">
+                  <p class="fz13 c777 fw500 ">Title: <span class="cblack fw500">Full Stack Developer</span> </p>
+                  <p class="fz13 c777 fw500 ">Programming Language: <span class="cblack fw500"> Python</span> </p>
+                  <p class="fz13 c777 fw500 ">Years Of Experience:<span class="cblack fw500">15+</span></p>
+                  <div class="toggle-check">
+                    <input type="checkbox" id="job-check" class="checkbox">
+                    <label for="job-check">
+                      <div></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="general-info capitalize pb15 pt15 pointer pl15">
+                <h5 class="fz16 fw600 width100 c777 mb10">Billing Information
+                </h5>
+                <div class="line-two">
+                  <p class="fz13 c777 fw500 ">Payment Method: <span class="cblack fw500">Paypal</span> </p>
+                  <p class="fz13 c777 fw500 ">Email: <span class="cblack fw500">email@website.com</span> </p>
+                  <p class="fz13 c777 fw500 ">Subscription: <span class="cblack fw500">Monthly</span> </p>
+                  <div class="toggle-check">
+                    <input type="checkbox" id="billing-check" class="checkbox">
+                    <label for="billing-check">
+                      <div></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <div class="skills-latest-activities flex  gap20 mt20">
+            <div class="myskills radius10 bcwhite pad20">
+              <div class="article-header">
+                <h1>my skills</h1>
+                <p>complete skills list</p>
+              </div>
+              <div class="skills-content">
+                <menu class="flex-ac gap10 pb10 border-b1 mb10 upper fz13 fw600">
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">css</li>
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">sass</li>
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">stylus</li>
+                </menu>
+                <menu class="flex-ac gap10 pb10 border-b1 mb10 upper fz13 fw600">
+
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">javaScript</li>
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">typeScript</li>
+                </menu>
+                <menu class="flex-ac gap10 pb10 border-b1 mb10 upper fz13 fw600">
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">vuejs</li>
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">reactjs</li>
+                </menu>
+                <menu class="flex-ac gap10 pb10 border-b1 mb10 upper fz13 fw600">
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">jest</li>
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">jasmine</li>
+                </menu>
+                <menu class="flex-ac gap10 pb10 border-b1 mb10 upper fz13 fw600">
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">php</li>
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">laraveel</li>
+                </menu>
+                <menu class="flex-ac gap10  upper fz13 fw600">
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">python</li>
+                  <li class="pt5 pb5 pl10 pr10 bceee radius6">django</li>
+                </menu>
+
+              </div>
+            </div>
+            <div class="latest-activities flex-1 pad20 radius10 bcwhite">
+              <div class="article-header">
+                <h1>latest activities</h1>
+                <p>Latest Activities Done By The User</p>
+              </div>
+              <div class="latest-activities-content">
+                <div class="activities-type flex-jspace-ac border-b1 pb15 mb10">
+                  <div class="act-img-name flex-ac gap10">
+                    <div class="activities-img width50px">
+                      <img src="./imgs/activity-01.png" alt="image">
+                    </div>
+                    <div class="act-text ">
+                      <h5 class="capitalize fz15 mb10">store</h5>
+                      <p class="c777 capitalize fz13"> Bought The Mastering Python Course
+                      </p>
+                    </div>
+                  </div>
+                  <div class="act-date">
+                    <span class="bolck fz14 mb10">18:10</span>
+                    <p class="capitalize fw500 fz13 c777">yesterday</p>
+                  </div>
+                </div>
+                <div class="activities-type flex-jspace-ac border-b1 pb15 mb10">
+                  <div class="act-img-name flex-ac gap10">
+                    <div class="activities-img width50px">
+                      <img src="./imgs/activity-02.png" alt="image">
+                    </div>
+                    <div class="act-text ">
+                      <h5 class="capitalize fz15 mb10">academy</h5>
+                      <p class="c777 capitalize fz13"> got the php certificate
+                      </p>
+                    </div>
+                  </div>
+                  <div class="act-date">
+                    <span class="bolck fz14 mb10">16:22</span>
+                    <p class="capitalize fw500 fz13 c777">yesterday</p>
+                  </div>
+                </div>
+                <div class="activities-type flex-jspace-ac border-b1 pb15 mb10">
+                  <div class="act-img-name flex-ac gap10">
+                    <div class="activities-img width50px">
+                      <img src="./imgs/activity-03.png" alt="image">
+                    </div>
+                    <div class="act-text ">
+                      <h5 class="capitalize fz15 mb10">badges</h5>
+                      <p class="c777 capitalize fz13"> unlocked the 10 skills badge
+                      </p>
+                    </div>
+                  </div>
+                  <div class="act-date">
+                    <span class="bolck fz14 mb10">18:05</span>
+                    <p class="capitalize fw500 fz13 c777">yesterday</p>
+                  </div>
+                </div>
+                <div class="activities-type flex-jspace-ac">
+                  <div class="act-img-name flex-ac gap10">
+                    <div class="activities-img width50px">
+                      <img src="./imgs/activity-01.png" alt="image">
+                    </div>
+                    <div class="act-text ">
+                      <h5 class="capitalize fz15 mb10">store</h5>
+                      <p class="c777 capitalize fz13"> Bought The Mastering Python Course
+                      </p>
+                    </div>
+                  </div>
+                  <div class="act-date">
+                    <span class="bolck fz14 mb10">12:05</span>
+                    <p class="capitalize fw500 fz13 c777">yesterday</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+
+</html>

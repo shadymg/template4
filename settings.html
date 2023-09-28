@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Here is my First Dashboard" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings | Home</title>
+  <!-- Master css -->
+  <link rel="stylesheet" href="./css/master.css" />
+  <!-- Main FrameWork -->
+  <link rel="stylesheet" href="./css/framework.css" />
+  <!-- Font awesome Liberary -->
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+</head>
+
+<body>
+  <main class="page flex prelative">
+    <aside class="side-bar bcwhite">
+      <div class="aside-header">
+        <a href="home.html">
+          <h1 class="prelative aside-header-title txtc prelative pb20 mb50 pointer">
+            elzero
+          </h1>
+        </a>
+      </div>
+      <nav class="asid-nav-bar">
+        <menu>
+          <li class="">
+            <a class="block mb10" href="home.html"><i class="fa-solid fa-chart-bar"></i><span
+                class="pl10 fz14">dashboard</span></a>
+          </li>
+          <li>
+            <a href="settings.html" class="active block mb10"><i class="fa-solid fa-gear"></i><span
+                class="pl10 fz14">settings</span></a>
+          </li>
+          <li>
+            <a href="profile.html" class="block mb10"><i class="fa-regular fa-user"></i><span
+                class="pl10 fz14">profile</span></a>
+          </li>
+          <li>
+            <a href="projects.html" class="block mb10"><i class="fa-solid fa-diagram-project"></i><span
+                class="pl10 fz14">projects</span></a>
+          </li>
+          <li>
+            <a href="courses.html" class="block mb10"><i class="fa-solid fa-graduation-cap"></i><span
+                class="pl10 fz14">courses</span></a>
+          </li>
+          <li>
+            <a href="friends.html" class="block mb10"><i class="fa-regular fa-circle-user"></i><span
+                class="pl10 fz14">friends</span></a>
+          </li>
+          <li>
+            <a href="files.html" class="block mb10"><i class="fa-regular fa-file pl2"></i><span
+                class="pl10 fz14">files</span></a>
+          </li>
+          <li>
+            <a href="plans.html" class="block mb10"><i class="fa-regular fa-credit-card"></i><span
+                class="pl10 fz14">plans</span></a>
+          </li>
+        </menu>
+      </nav>
+    </aside>
+    <section class="right-side">
+      <header class="right-side-header flex-jspace-ac pr20 pl20">
+        <form class="header-search-form prelative">
+          <i class="fa-solid fa-magnifying-glass pabsolute"></i>
+          <input class="pl40 pad10" type="search" name="search" placeholder="type a keyword" />
+        </form>
+        <div class="header-avatar flex-ac">
+          <span class="prelative">
+            <i class="fa-regular fa-bell fz20 pointer"></i></span>
+          <div class="header-avatar-image">
+            <img class="pointer" src="./imgs/avatar.png" alt="head-avatar" />
+          </div>
+        </div>
+      </header>
+      <section class="default-section bcback-color">
+        <div class="default-section-header">
+          <h1 class="prelative fz40 pointer mb30">settings</h1>
+        </div>
+        <div class="default-section-content grid500 gap20">
+          <!-- site control -->
+          <article class="site-control radius10 pad20 bcwhite">
+            <div class="article-header">
+              <h1>site control</h1>
+              <p>control the website if there is maintenance</p>
+            </div>
+            <div class="site-control-content">
+              <div class="site-control-flex flex-jspace-ac mb20">
+                <div class="site-control-text">
+                  <p class="fz17 fw600 capitalize mb5">website control</p>
+                  <span class="fz12 c777 capitalize">
+                    Open/Close Website And Type The Reason
+                  </span>
+                </div>
+                <div class="toggle-check">
+                  <input type="checkbox" id="checkbox-site-control" class="checkbox" />
+                  <label for="checkbox-site-control">
+                    <div></div>
+                  </label>
+                </div>
+              </div>
+              <textarea name="text" placeholder="close message content "
+                class="radius10 width100 height150px pad10 capitalize border1 fz13"></textarea>
+            </div>
+          </article>
+          <!-- general info -->
+          <article class="general-info radius10 bcwhite pad20">
+            <div class="article-header">
+              <h1>general info</h1>
+              <p>General Information About Your Account</p>
+            </div>
+            <div class="general-info-content">
+              <form>
+                <label for="first-name"> first name&#42;</label>
+                <input type="text" placeholder="first name" id="first-name" required />
+                <label for="last-name"> last name&#42; </label>
+                <input type="text" placeholder="last name" id="last-name" required />
+                <div class="email-flex">
+                  <div>
+                    <label for="email">email</label>
+                    <input type="email" id="email" placeholder="o@nn.sa" readonly />
+                  </div>
+                  <button class="change-button">change</button>
+                </div>
+              </form>
+            </div>
+          </article>
+          <!-- secuirty info -->
+          <article class="secuirty-info bcwhite radius10 pad20">
+            <div class="article-header">
+              <h1>secuirty info</h1>
+              <p>Security Information About Your Account</p>
+            </div>
+            <div class="secuirty-info-content">
+              <div class="password-info pblock15 border-b1 flex-jspace-ac">
+                <div class="password-info-text">
+                  <p class="capitalize fz15 mb5 fw700">password</p>
+                  <span class="fz13 capitalize c777">Last Change On 25/10/2021
+                  </span>
+                </div>
+                <button class="pass-info-button cwhite bcblue pt5 pb5 pr10 pl10 bordernone radius6 fw700 capitalize">
+                  change
+                </button>
+              </div>
+              <div class="two-factor pblock15 border-b1 flex-jspace-ac">
+                <div class="two-factor-text">
+                  <p class="capitalize fz15 mb5 fw700">
+                    Two-Factor Authentication
+                  </p>
+                  <span class="fz13 capitalize c777">Enable/Disable The Feature
+                  </span>
+                </div>
+                <div class="toggle-check">
+                  <input type="checkbox" id="checkbox-two-factor" class="checkbox" />
+                  <label for="checkbox-two-factor">
+                    <div></div>
+                  </label>
+                </div>
+              </div>
+              <div class="devices-info pblock15 border-b1 flex-jspace-ac">
+                <div class="devices-info-text">
+                  <p class="capitalize fz15 mb5 fw700">devices</p>
+                  <span class="fz13 capitalize c777">Check The Login Devices List
+                  </span>
+                </div>
+                <button class="devices-info-button cblack bceee pt5 pb5 pr10 pl10 bordernone radius6 fw700 capitalize">
+                  devices
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- social info -->
+          <article class="social-info pad20 radius10 bcwhite">
+            <div class="article-header">
+              <h1>social info</h1>
+              <p>social media information</p>
+            </div>
+            <div class="social-info-content">
+              <form action="">
+                <div class="twiter-user flex-ac bceee radius6 border1 capitalize gap15 mb20">
+                  <input class="bordernone bceee" type="text" placeholder="twitter username" id="twiter-user" />
+                  <label for="twiter-user"><i class="fa-brands fa-twitter block pr10 pl10 pad10"></i></label>
+                </div>
+                <div class="facebook-user flex-ac bceee radius6 border1 capitalize gap15 mb20">
+                  <input class="bordernone bceee" type="text" placeholder="facebook username" id="facebook-user" />
+                  <label for="facebook-user"><i class="fa-brands fa-facebook-f block pad10"></i></label>
+                </div>
+                <div class="linkedin-user flex-ac bceee radius6 border1 capitalize gap15 mb20">
+                  <input class="bordernone bceee" type="text" placeholder="linkedin username" id="linkedin-user" />
+                  <label for="linkedin-user"><i class="fa-brands fa-linkedin block pad10"></i></label>
+                </div>
+                <div class="youtube-user flex-ac bceee radius6 border1 capitalize gap15 mb20">
+                  <input class="bordernone bceee" type="text" placeholder="youtube username" id="youtube-user" />
+                  <label for="youtube-user"><i class="fa-brands fa-youtube block pad10"></i></label>
+                </div>
+              </form>
+            </div>
+          </article>
+          <!-- widgets control -->
+          <article class="widgets-control bcwhite pad20 radius10">
+            <div class="article-header">
+              <h1>Widgets Control</h1>
+              <p>Show/Hide Widgets</p>
+            </div>
+            <form action="">
+
+              <div class="quick-draft">
+                <input type="checkbox" class="quick-checkbox" id="quick" checked />
+                <label for="quick" class="capitalize">
+                  <div></div>
+                  quick draft
+                </label>
+              </div>
+              <div class="quick-draft">
+                <input type="checkbox" class="quick-checkbox" id="Yearly-Targets
+                    " checked />
+                <label for="Yearly-Targets
+                    " class="capitalize">
+                  <div></div>
+                  Yearly Targets
+                </label>
+              </div>
+              <div class="quick-draft">
+                <input type="checkbox" class="quick-checkbox" id="Tickets-Statistics
+                    " checked />
+                <label for="Tickets-Statistics
+                    " class="capitalize">
+                  <div></div>
+                  Tickets Statistics
+                </label>
+              </div>
+              <div class="quick-draft">
+                <input type="checkbox" class="quick-checkbox" id="Latest-News" checked />
+                <label for="Latest-News" class="capitalize">
+                  <div></div>
+                  latest news
+                </label>
+              </div>
+              <div class="quick-draft">
+                <input type="checkbox" class="quick-checkbox" id="latest-tasks" />
+                <label for="latest-tasks" class="capitalize">
+                  <div></div>
+                  latest tasks
+                </label>
+              </div>
+              <div class="quick-draft">
+                <input type="checkbox" class="quick-checkbox" id="top-search" checked />
+                <label for="top-search" class="capitalize">
+                  <div></div>
+                  top search itemes
+                </label>
+              </div>
+            </form>
+          </article>
+          <!-- Backup Manager -->
+          <article class="backup-manager radius10 pad20 bcwhite">
+            <div class="article-header">
+              <h1>backup manager</h1>
+              <p>Control Backup Time And Location</p>
+            </div>
+            <div class="backup-manger-content">
+              <form class="norm-radio">
+                <input type="radio" name="backup" id="daily" />
+                <label for="daily">
+                  <div></div>
+                  daily
+                </label>
+                <input type="radio" name="backup" id="weekly" />
+                <label for="weekly">
+                  <div></div>
+                  weekly
+                </label>
+                <input type="radio" name="backup" id="monthly" checked />
+                <label for="monthly">
+                  <div></div>
+                  monthly
+                </label>
+              </form>
+              <!-- castumise radio -->
+              <form action="" class="custmize-radio ">
+                <div class="megaman"> <input type="radio" name="manger" id="megaman">
+                  <label for="megaman" class="capitalize fz15 fw600 gap10 radius10  ">
+                    <i class="fa-solid fa-diagram-next"></i>
+                    megaman
+                  </label>
+                </div>
+                <div class="zero"> <input type="radio" name="manger" id="zero">
+                  <label for="zero" class="capitalize fz15 fw600 gap10 radius10  ">
+                    <i class="fa-solid fa-diagram-next"></i>
+                    zero
+                  </label>
+                </div>
+                <div class="sigma"> <input type="radio" name="manger" id="sigma">
+                  <label for="sigma" class="capitalize fz15 fw600 gap10 radius10  ">
+                    <i class="fa-solid fa-diagram-next"></i>
+                    sigma
+                  </label>
+                </div>
+              </form>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+
+</html>
